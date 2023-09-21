@@ -6,6 +6,8 @@
 
 El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de género mediante el uso del algoritmo de vecinos más cercanos (KNN). El objetivo principal es entrenar un modelo capaz de analizar imágenes en escala de grises con una resolución de 400x600 píxeles y asignar una etiqueta que indique si la persona en la imagen es un hombre (1) o una mujer (0).
 
+<img src="https://raw.githubusercontent.com/SebastianCarvalhoSalazar/DataAlgebraMasters/master/GenderClassificationWithKNN/assets/Resultados.png" width="50%"></img>
+
 #### Etapas del Proyecto
 
 1. **Carga de Datos:** Comienza con la carga de datos desde carpetas que contienen imágenes de hombres y mujeres. Los datos se obtuvieron del conjunto de datos disponible en Kaggle: [Gender Classification Dataset](https://www.kaggle.com/datasets/cashutosh/gender-classification-dataset). Las imágenes se ajustan a la resolución deseada, se convierten a escala de grises y se mejoran para mejorar la calidad de la información visual.
