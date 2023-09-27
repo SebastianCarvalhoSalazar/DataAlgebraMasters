@@ -1,24 +1,27 @@
 # DataAlgebraMasters
 
 ## Tabla de Contenidos
-- [Problema 1: Corrector de Palabras](#Problema-1:-Corrector-de-Palabras)
-  - [Descripción del Problema](#Descripción-del-Problema:)
-  - [Etapas del proyecto](#Etapas-del-proyecto:)
-- [Problema 2: GenderClassificationWithKNN](#Problema-2:-GenderClassificationWithKNN)
+- [Problema 1: Corrector de Palabras](#problema-1-corrector-de-palabras)
+  - [Descripción del Problema](#descripción-del-problema)
+  - [Etapas del proyecto](#etapas-del-proyecto)
+- [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
+  - [Descripción del Problema](#descripción-del-problema)
+  - [Etapas del proyecto](#etapas-del-proyecto)
 
 ## Problema 1: Corrector de Palabras
 
-### Descripción del Problema:
+### Descripción del Problema
 El proyecto se focaliza en corregir las palabras, de acuerdo a un texto que se tiene previamente almacenado en un archivo, por ejemplo. De acuerdo a la palabra que la persona escribe, esta es consultada en el documento antes mencionado para buscar una palabra más recomendada.
 
-### Etapas del proyecto:
+### Etapas del proyecto
+
 1. Carga del archivo insumo, el cual contiene las palabras base.
 2. Corrección de la palabra digitada por el usuario, de acuerdo a la información que se tiene almacenada previamente. 
 3. La recomendación se realización con base a la información que se tiene en el documento. Utilizando la distancia de Levanten entre dos string, el primero de ellos el ingresado por el usuario, y el segundo el que se encuentra en el diccionario u archivo cargado al inicio. Se debe tener en cuenta que el resultado se da por el numero mínimo de ediciones (cambios) que se deban realizar entre la palabra ingresada por el usuario Vs la base de datos (archivo) cargado previamente.
 
 ## Problema 2: GenderClassificationWithKNN
 
-### Descripción del Proyecto
+### Descripción del problema
 
 El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de género mediante el uso del algoritmo de vecinos más cercanos (KNN). El objetivo principal es entrenar un modelo capaz de analizar imágenes en escala de grises con una resolución de 400x600 píxeles y asignar una etiqueta que indique si la persona en la imagen es un hombre (1) o una mujer (0).
 
