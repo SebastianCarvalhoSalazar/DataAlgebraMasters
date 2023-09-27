@@ -8,6 +8,7 @@
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
+  - [Script (Problema 5)](#script-problema-problema-5)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Etapas del proyecto (Problema 5)](#etapas-del-proyecto-problema-5)
 
@@ -46,6 +47,34 @@ El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de gén
 El éxito de este proyecto radica en la calidad de los datos de entrenamiento, la selección adecuada de hiperparámetros del modelo KNN y la capacidad de generalización del modelo en nuevas imágenes. Este enfoque de clasificación de género tiene aplicaciones potenciales en diversas áreas, como la identificación de género en fotografías, la segmentación demográfica en investigaciones y análisis de mercado, y más.
 
 ## Problema 5: Cálculo de Normas en una Matriz
+
+### Script (Problema 5)
+
+```python
+import numpy as np
+
+# Matriz
+A = np.array([[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]])
+
+# Calcula la norma uno (||A||₁) - Columnas
+norm_1 = np.max(np.sum(np.abs(A), axis=0))
+# Calcula la norma infinito (||A||∞) - Filas
+norm_inf = np.max(np.sum(np.abs(A), axis=1))
+
+# Mostrar resultados
+print("Norma 1 --> (||A||₁):", norm_1)
+print("Norma Infinito --> (||A||∞):", norm_inf)
+
+# Validar
+norm_1_numpy = np.linalg.norm(A,1) # Norma 1
+norm_inf_numpy = np.linalg.norm(A, np.inf) # Norma infinito
+
+# Mostrar resultados
+print("Norma 1 Numpy --> (||A||₁):", norm_1_numpy)
+print("Norma Infinito Numpy --> (||A||∞):", norm_inf_numpy)
+```
 
 Este script de Python tiene como objetivo calcular la norma 1 y la norma infinito de una matriz. Las normas son medidas matemáticas que describen la magnitud de una matriz y se utilizan en diversas aplicaciones numéricas y algebraicas.
 
