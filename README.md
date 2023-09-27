@@ -11,12 +11,12 @@
 ## Problema 1: Corrector de Palabras
 
 ### Descripción del Problema (Problema 1)
-El proyecto se focaliza en corregir las palabras, de acuerdo a un texto que se tiene previamente almacenado en un archivo, por ejemplo. De acuerdo a la palabra que la persona escribe, esta es consultada en el documento antes mencionado para buscar una palabra más recomendada.
+El objetivo principal de este proyecto es corregir palabras en función de un texto previamente almacenado en un archivo. Cuando un usuario escribe una palabra, esta se consulta en el documento mencionado anteriormente para encontrar una sugerencia más adecuada.
 
 ### Etapas del proyecto (Problema 1)
-1. Carga del archivo insumo, el cual contiene las palabras base.
-2. Corrección de la palabra digitada por el usuario, de acuerdo a la información que se tiene almacenada previamente. 
-3. La recomendación se realización con base a la información que se tiene en el documento. Utilizando la distancia de Levanten entre dos string, el primero de ellos el ingresado por el usuario, y el segundo el que se encuentra en el diccionario u archivo cargado al inicio. Se debe tener en cuenta que el resultado se da por el numero mínimo de ediciones (cambios) que se deban realizar entre la palabra ingresada por el usuario Vs la base de datos (archivo) cargado previamente.
+1. Carga del archivo de entrada, que contiene las palabras base.
+2. Corrección de la palabra ingresada por el usuario utilizando la información previamente almacenada.
+3. La recomendación se basa en la información del documento y utiliza la distancia de Levenshtein entre dos cadenas de caracteres: la primera es la palabra ingresada por el usuario y la segunda es la que se encuentra en el diccionario o archivo cargado al principio. Es importante destacar que el resultado se determina por el número mínimo de ediciones (cambios) necesarios entre la palabra ingresada por el usuario y la base de datos (archivo) cargado previamente.
 
 ## Problema 2: GenderClassificationWithKNN
 
