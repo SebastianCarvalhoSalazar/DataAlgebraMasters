@@ -8,8 +8,8 @@
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
-  - [Script (Problema 5)](#script-problema-5)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
+  - [Script (Problema 5)](#script-problema-5)
   - [Etapas del proyecto (Problema 5)](#etapas-del-proyecto-problema-5)
 
 ## Problema 1: Corrector de Palabras
@@ -48,6 +48,10 @@ El éxito de este proyecto radica en la calidad de los datos de entrenamiento, l
 
 ## Problema 5: Cálculo de Normas en una Matriz
 
+### Descripción del Problema (Problema 5)
+
+El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
+
 ### Script (Problema 5)
 
 ```python
@@ -77,10 +81,6 @@ print("Norma Infinito Numpy --> (||A||∞):", norm_inf_numpy)
 ```
 
 Este script de Python tiene como objetivo calcular la norma 1 y la norma infinito de una matriz. Las normas son medidas matemáticas que describen la magnitud de una matriz y se utilizan en diversas aplicaciones numéricas y algebraicas.
-
-### Descripción del Problema (Problema 5)
-
-El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
 
 ### Etapas del Proyecto (Problema 5)
 
