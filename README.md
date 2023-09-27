@@ -7,6 +7,9 @@
 - [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
+- [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
+  - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
+  - [Etapas del proyecto (Problema 5)](#etapas-del-proyecto-problema-5)
 
 ## Problema 1: Corrector de Palabras
 
@@ -41,3 +44,28 @@ El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de gén
 5. **Predicción de Género:** Finalmente, se proporciona una función para cargar el modelo entrenado y utilizarlo para predecir el género en nuevas imágenes. Se muestra un collage de imágenes de prueba con sus respectivas predicciones de género.
 
 El éxito de este proyecto radica en la calidad de los datos de entrenamiento, la selección adecuada de hiperparámetros del modelo KNN y la capacidad de generalización del modelo en nuevas imágenes. Este enfoque de clasificación de género tiene aplicaciones potenciales en diversas áreas, como la identificación de género en fotografías, la segmentación demográfica en investigaciones y análisis de mercado, y más.
+
+## Problema 5: Cálculo de Normas en una Matriz
+
+Este script de Python tiene como objetivo calcular la norma 1 y la norma infinito de una matriz. Las normas son medidas matemáticas que describen la magnitud de una matriz y se utilizan en diversas aplicaciones numéricas y algebraicas.
+
+## Descripción del Problema (Problema 5)
+
+El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
+
+### Etapas del Proyecto (Problema 5)
+
+El proyecto sigue las siguientes etapas:
+
+1. **Definición de la Matriz**: Se crea una matriz de ejemplo, en este caso, la matriz `A`, que se utilizará para calcular las normas.
+
+2. **Cálculo de la Norma 1**: Se realiza el cálculo de la norma 1 (||A||₁) de las columnas de la matriz. Esto implica sumar los valores absolutos de las columnas y encontrar el máximo de esas sumas.
+
+3. **Cálculo de la Norma Infinito**: Se efectúa el cálculo de la norma infinito (||A||∞) de las filas de la matriz. Esto consiste en sumar los valores absolutos de las filas y encontrar el máximo de esas sumas.
+
+4. **Mostrar Resultados**: Los resultados de las normas calculadas se imprimen en la consola para su visualización.
+
+5. **Validación con NumPy**: Se valida el cálculo de las normas utilizando las funciones proporcionadas por la biblioteca NumPy, que es una herramienta ampliamente utilizada en computación científica y numérica.
+
+Este script es útil para calcular normas en matrices y puede ser aplicado en diversos campos, como análisis de datos, procesamiento de señales, y más, donde medir la magnitud de los datos es esencial.
+
