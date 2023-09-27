@@ -1,6 +1,22 @@
 # DataAlgebraMasters
 
-## Proyecto #1: GenderClassificationWithKNN
+## Tabla de Contenidos
+- [Problema 1: Corrector de Palabras](#Problema-1:-Corrector-de-Palabras)
+  - [Descripción del Problema](#Descripción-del-Problema:)
+  - [Etapas del proyecto](#Etapas-del-proyecto:)
+- [Problema 2: GenderClassificationWithKNN](#Problema-2:-GenderClassificationWithKNN)
+
+## Problema 1: Corrector de Palabras
+
+### Descripción del Problema:
+El proyecto se focaliza en corregir las palabras, de acuerdo a un texto que se tiene previamente almacenado en un archivo, por ejemplo. De acuerdo a la palabra que la persona escribe, esta es consultada en el documento antes mencionado para buscar una palabra más recomendada.
+
+### Etapas del proyecto:
+1. Carga del archivo insumo, el cual contiene las palabras base.
+2. Corrección de la palabra digitada por el usuario, de acuerdo a la información que se tiene almacenada previamente. 
+3. La recomendación se realización con base a la información que se tiene en el documento. Utilizando la distancia de Levanten entre dos string, el primero de ellos el ingresado por el usuario, y el segundo el que se encuentra en el diccionario u archivo cargado al inicio. Se debe tener en cuenta que el resultado se da por el numero mínimo de ediciones (cambios) que se deban realizar entre la palabra ingresada por el usuario Vs la base de datos (archivo) cargado previamente.
+
+## Problema 2: GenderClassificationWithKNN
 
 ### Descripción del Proyecto
 
