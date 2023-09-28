@@ -1,7 +1,8 @@
 import re
 from collections import Counter
 
-path = ".//diccionario.txt"
+# path = ".//diccionario.txt"
+path = "CorrectorDePalabras\diccionario.txt"
 
 def words(text): return re.findall(r'\w+', text.lower())
 WORDS = Counter(words(open(path).read()))
