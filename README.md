@@ -57,27 +57,38 @@ El problema que aborda este script se refiere al cálculo de normas en una matri
 ```python
 import numpy as np
 
-# Matriz
-A = np.array([[1, 2, 3],
-              [4, 5, 6],
-              [7, 8, 9]])
+def calcular_normas(matriz):
+    # Calcula la norma uno (||A||₁) - Columnas
+    norm_1 = np.max(np.sum(np.abs(matriz), axis=0))
+    
+    # Calcula la norma infinito (||A||∞) - Filas
+    norm_inf = np.max(np.sum(np.abs(matriz), axis=1))
+    
+    # Validar con NumPy
+    norm_1_numpy = np.linalg.norm(matriz, 1)  # Norma 1
+    norm_inf_numpy = np.linalg.norm(matriz, np.inf)  # Norma infinito
+    
+    # Crear un diccionario con los resultados
+    resultados = {
+        "Norma 1": norm_1,
+        "Norma Infinito": norm_inf,
+        "Norma 1 Numpy": norm_1_numpy,
+        "Norma Infinito Numpy": norm_inf_numpy
+    }
+    
+    return resultados
 
-# Calcula la norma uno (||A||₁) - Columnas
-norm_1 = np.max(np.sum(np.abs(A), axis=0))
-# Calcula la norma infinito (||A||∞) - Filas
-norm_inf = np.max(np.sum(np.abs(A), axis=1))
+# Matriz de ejemplo
+matriz_ejemplo = np.array([[1, 2, 3],
+                           [4, 5, 6],
+                           [7, 8, 9]])
+
+# Llamar a la función y obtener los resultados
+resultados = calcular_normas(matriz_ejemplo)
 
 # Mostrar resultados
-print("Norma 1 --> (||A||₁):", norm_1)
-print("Norma Infinito --> (||A||∞):", norm_inf)
-
-# Validar
-norm_1_numpy = np.linalg.norm(A,1) # Norma 1
-norm_inf_numpy = np.linalg.norm(A, np.inf) # Norma infinito
-
-# Mostrar resultados
-print("Norma 1 Numpy --> (||A||₁):", norm_1_numpy)
-print("Norma Infinito Numpy --> (||A||∞):", norm_inf_numpy)
+for clave, valor in resultados.items():
+    print(f"{clave} --> {valor}")
 ```
 
 Este script de Python tiene como objetivo calcular la norma 1 y la norma infinito de una matriz. Las normas son medidas matemáticas que describen la magnitud de una matriz y se utilizan en diversas aplicaciones numéricas y algebraicas.
