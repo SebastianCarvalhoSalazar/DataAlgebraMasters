@@ -4,14 +4,13 @@
 - [Problema 1: Corrector de Palabras](#problema-1-corrector-de-palabras)
   - [Descripción del Problema (Problema 1)](#descripción-del-problema-problema-1)
   - [Etapas del proyecto (Problema 1)](#etapas-del-proyecto-problema-1)
-  - [¿Qué distancias utilizamos y por qué?](#qué-distancias-utilizamos-y-por-qué)
 - [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
-- [Problema 3: Gráfica de Bola en R^2](#problema-3-gráfica-de-bola-en-r2)
-  - [Descripción del Problema (Problema 3a)](#descripción-del-problema-problema-3a)
-  - [Etapas del proyecto (Problema 1)](#etapas-del-proyecto-problema-1)
   - [¿Qué distancias utilizamos y por qué?](#qué-distancias-utilizamos-y-por-qué)
+- [Problema 3:](#problema-3)
+  - [Descripción del Problema (Problema 3a)](#descripción-del-problema-problema-3a)
+  - [Etapas del proyecto (Problema 3a)](#etapas-del-proyecto-problema-3a)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
@@ -65,7 +64,7 @@ La elección entre una u otra depende de si las magnitudes de las característic
 
 Problema 3: a. Grafique en el plano R^2 la bola de radio r y centro en el origen respecto a la distancia de Minkowski de orden p, donde los parámetros r y p varían desde 0.1 hasta 2 y desde 1 hasta ∞.
 
-### Etapas del Proyecto (Problema 1)
+### Etapas del Proyecto (Problema 3a)
 
 1. Se define la función a utilizar, que en este caso es `minkowski_distance`.
 2. Posteriormente, se calculan los radios en un par de bucles `for` anidados, calculando los ángulos cos(θ) y seno(θ).
