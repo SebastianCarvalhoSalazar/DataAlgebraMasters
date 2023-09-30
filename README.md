@@ -12,6 +12,8 @@
   - [Descripción del Problema (Problema 3a)](#descripción-del-problema-problema-3a)
   - [Etapas del proyecto (Problema 3a)](#etapas-del-proyecto-problema-3a)
   - [Script (Problema 3a)](#script-problema-3a)
+  - [Descripción del Problema (Problema 3b)](#descripción-del-problema-problema-3b)
+  - [Etapas del proyecto (Problema 3b)](#etapas-del-proyecto-problema-3b)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
@@ -118,6 +120,16 @@ plt.show()
 <p align="center">
   <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Assets/cicunferencia_de_minkouski.jpg" width="70%">
 </p>
+
+### Descripción del Problema (Problema 3b)
+
+Problema 3: b. Programe un algoritmo que dado n y p genere de forma aleatoria un vector de R^n cuya distancia de Minkowski de orden p al origen sea menor a 0.1.
+
+### Etapas del Proyecto (Problema 3b)
+
+1. Se define la función a utilizar, que en este caso es `minkowski_distance`.
+2. Se generan valores aleatorios en un bucle `for` invocando las distancias.
+3. Se concluye que a medida que aumenta el valor de n en R^n, el cálculo se vuelve más complejo, ya que la distancia es muy pequeña y el número de posibilidades aumenta.
 
 ## Problema 5: Cálculo de Normas en una Matriz
 
