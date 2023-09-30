@@ -11,6 +11,7 @@
 - [Problema 3:](#problema-3)
   - [Descripción del Problema (Problema 3a)](#descripción-del-problema-problema-3a)
   - [Etapas del proyecto (Problema 3a)](#etapas-del-proyecto-problema-3a)
+  - [Script (Problema 3a)](#script-problema-3a)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
@@ -70,7 +71,8 @@ Problema 3: a. Grafique en el plano R^2 la bola de radio r y centro en el origen
 2. Posteriormente, se calculan los radios en un par de bucles `for` anidados, calculando los ángulos cos(θ) y seno(θ).
 3. Finalmente, se grafica usando `matplotlib`.
 4. Se concluye que a menor radio, la distancia de Minkowski es menor.
-   
+
+### Script (Problema 3a)
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
