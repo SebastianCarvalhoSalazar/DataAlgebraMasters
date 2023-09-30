@@ -4,6 +4,7 @@
 - [Problema 1: Corrector de Palabras](#problema-1-corrector-de-palabras)
   - [Descripción del Problema (Problema 1)](#descripción-del-problema-problema-1)
   - [Etapas del proyecto (Problema 1)](#etapas-del-proyecto-problema-1)
+  - [¿Qué distancias utilizamos y por qué?](¿qué-distancias-utilizamos-y-por-qué?)
 - [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
@@ -45,6 +46,8 @@ El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de gén
 5. **Predicción de Género:** Finalmente, se proporciona una función para cargar el modelo entrenado y utilizarlo para predecir el género en nuevas imágenes. Se muestra un collage de imágenes de prueba con sus respectivas predicciones de género.
 
 El éxito de este proyecto radica en la calidad de los datos de entrenamiento, la selección adecuada de hiperparámetros del modelo KNN y la capacidad de generalización del modelo en nuevas imágenes. Este enfoque de clasificación de género tiene aplicaciones potenciales en diversas áreas, como la identificación de género en fotografías, la segmentación demográfica en investigaciones y análisis de mercado, y más.
+
+## ¿Qué distancias utilizamos y por qué?
 
 La distancia coseno se centra en la orientación o dirección de los vectores de características de las imágenes, ignorando la magnitud. Esto la hace útil cuando se desea medir la similitud en términos de patrones o direcciones, lo que es común en la representación de imágenes como vectores.
 
