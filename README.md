@@ -15,6 +15,9 @@
   - [Etapas del proyecto (Problema 3b)](#etapas-del-proyecto-problema-3b)
   - [Descripción del Problema (Problema 3b)](#descripción-del-problema-problema-3b)
   - [Script (Problema 3b)](#script-problema-3b)
+  - [Problema 1: PhToVec](#problema-1-phtovec)
+  - [Descripción del Problema (Problema 4)](#descripción-del-problema-problema-4)
+  - [Etapas del proyecto (Problema 4)](#etapas-del-proyecto-problema-4)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
@@ -176,11 +179,56 @@ for i, point in enumerate(points):
 print(time.strftime("%c"))
 ```
 
+## Problema 4: PhToVec
+
+### Descripción del Problema (Problema 4)
+Este código en Python utiliza la biblioteca NumPy, OpenCV (cv2) y Matplotlib para generar una secuencia de imágenes con el objetivo de acercarse a una imagen de referencia dada. El proceso se basa en la norma de Frobenius para medir la similitud entre las imágenes y se detiene cuando se alcanza un umbral de similitud especificado.
+
+### Etapas del Proyecto (Problema 4)
+
+1. **Importación de bibliotecas:** En las primeras líneas del código, se importan las bibliotecas necesarias: NumPy para operaciones numéricas, OpenCV para cargar imágenes y Matplotlib para visualización.
+
+2. **Definición de funciones:**
+   - `normalize_image(image)`: Esta función normaliza una imagen para que sus valores estén en el rango [0, 1].
+   - `frobenius_distance(matrix1, matrix2)`: Calcula la distancia de Frobenius entre dos matrices.
+   - `generar_secuencia_imagenes(ruta_imagen, factor_convergencia, num_iteraciones, stop_threshold)`: La función principal que realiza el proceso de generación de la secuencia de imágenes.
+
+3. **Cargar la imagen original:** Se carga una imagen original en blanco y negro desde la ruta especificada y se redimensiona a 400x600 píxeles.
+
+4. **Generar una imagen aleatoria:** Se crea una imagen aleatoria del mismo tamaño que la imagen original y se normaliza.
+
+5. **Inicializar la secuencia de imágenes:** Se inicia una secuencia de imágenes con la imagen aleatoria generada.
+
+6. **Bucle de iteraciones:** Se inicia un bucle que se ejecuta hasta que se alcance un umbral de similitud o el número máximo de iteraciones.
+   - Se calcula la diferencia entre la imagen original y la última imagen generada.
+   - Se calcula la norma de Frobenius de la diferencia y se almacena en una lista.
+   - Si se alcanza el umbral de similitud, se sale del bucle.
+   - Se actualiza la imagen generada utilizando el factor de convergencia y la diferencia.
+   - Se agrega la nueva imagen a la secuencia.
+
+7. **Visualización de imágenes:** Se muestra una serie de imágenes generadas en un formato de cuadrícula utilizando Matplotlib.
+
+8. **Graficar las normas de Frobenius:** Se muestra un gráfico que representa la convergencia de la norma de Frobenius a lo largo de las iteraciones.
+
+9. **Ejemplo de uso:** Se proporciona un ejemplo de cómo utilizar la función principal con parámetros personalizados.
+
+10. **Fin del programa:** El programa finaliza su ejecución.
+
+Este código permite explorar cómo una imagen evoluciona hacia una imagen de referencia a través de un proceso iterativo utilizando la norma de Frobenius como métrica de similitud. Los resultados se visualizan tanto en forma de imágenes como en un gráfico de convergencia de la norma de Frobenius.
+
 ## Problema 5: Cálculo de Normas en una Matriz
 
 ### Descripción del Problema (Problema 5)
 
 El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
+
+<p align="center">
+  <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Problema4_PhToVec/assets/output_convergencia_frobenius.png" width="70%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Problema4_PhToVec/assets/output_sucesion_imagenes.png" width="70%">
+</p>
 
 ### Script (Problema 5)
 
