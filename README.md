@@ -4,7 +4,7 @@
 - [Problema 1: Corrector de Palabras](#problema-1-corrector-de-palabras)
   - [Descripción del Problema (Problema 1)](#descripción-del-problema-problema-1)
   - [Etapas del proyecto (Problema 1)](#etapas-del-proyecto-problema-1)
-  - [¿Qué distancias utilizamos y por qué?](¿qué-distancias-utilizamos-y-por-qué?)
+  - [¿Qué distancias utilizamos y por qué?](#qué-distancias-utilizamos-y-por-qué)
 - [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
