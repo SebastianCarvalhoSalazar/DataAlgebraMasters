@@ -14,6 +14,7 @@
   - [Script (Problema 3a)](#script-problema-3a)
   - [Etapas del proyecto (Problema 3b)](#etapas-del-proyecto-problema-3b)
   - [Descripción del Problema (Problema 3b)](#descripción-del-problema-problema-3b)
+  - [Script (Problema 3b)](#script-problema-3b)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
