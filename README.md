@@ -15,7 +15,7 @@
   - [Etapas del proyecto (Problema 3b)](#etapas-del-proyecto-problema-3b)
   - [Descripción del Problema (Problema 3b)](#descripción-del-problema-problema-3b)
   - [Script (Problema 3b)](#script-problema-3b)
-  - [Problema 1: PhToVec](#problema-1-phtovec)
+- [Problema 4: PhToVec](#problema-1-phtovec)
   - [Descripción del Problema (Problema 4)](#descripción-del-problema-problema-4)
   - [Etapas del proyecto (Problema 4)](#etapas-del-proyecto-problema-4)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
@@ -216,12 +216,6 @@ Este código en Python utiliza la biblioteca NumPy, OpenCV (cv2) y Matplotlib pa
 
 Este código permite explorar cómo una imagen evoluciona hacia una imagen de referencia a través de un proceso iterativo utilizando la norma de Frobenius como métrica de similitud. Los resultados se visualizan tanto en forma de imágenes como en un gráfico de convergencia de la norma de Frobenius.
 
-## Problema 5: Cálculo de Normas en una Matriz
-
-### Descripción del Problema (Problema 5)
-
-El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
-
 <p align="center">
   <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Problema4_PhToVec/assets/output_convergencia_frobenius.png" width="70%">
 </p>
@@ -229,6 +223,12 @@ El problema que aborda este script se refiere al cálculo de normas en una matri
 <p align="center">
   <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Problema4_PhToVec/assets/output_sucesion_imagenes.png" width="70%">
 </p>
+
+## Problema 5: Cálculo de Normas en una Matriz
+
+### Descripción del Problema (Problema 5)
+
+El problema que aborda este script se refiere al cálculo de normas en una matriz. Específicamente, se busca determinar la norma 1 (||A||₁) de las columnas y la norma infinito (||A||∞) de las filas de una matriz dada. Las normas son medidas importantes en álgebra lineal y análisis numérico, y proporcionan información sobre la "tamaño" o magnitud de una matriz en diferentes aspectos.
 
 ### Script (Problema 5)
 
