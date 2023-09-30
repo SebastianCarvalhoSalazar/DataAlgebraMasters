@@ -8,6 +8,10 @@
 - [Problema 2: GenderClassificationWithKNN](#problema-2-genderclassificationwithknn)
   - [Descripción del Problema (Problema 2)](#descripción-del-problema-problema-2)
   - [Etapas del proyecto (Problema 2)](#etapas-del-proyecto-problema-2)
+- [Problema 3: Gráfica de Bola en R^2](#problema-3-gráfica-de-bola-en-r2)
+  - [Descripción del Problema (Problema 3a)](#descripción-del-problema-problema-3a)
+  - [Etapas del proyecto (Problema 1)](#etapas-del-proyecto-problema-1)
+  - [¿Qué distancias utilizamos y por qué?](#qué-distancias-utilizamos-y-por-qué)
 - [Problema 5: Cálculo de Normas en una Matriz](#problema-5-cálculo-de-normas-en-una-matriz)
   - [Descripción del Problema (Problema 5)](#descripción-del-problema-problema-5)
   - [Script (Problema 5)](#script-problema-5)
@@ -54,6 +58,61 @@ La distancia coseno se centra en la orientación o dirección de los vectores de
 En cambio, la distancia euclidiana mide la diferencia en términos de la magnitud y dirección de los vectores de características. Es más adecuada cuando se requiere tener en cuenta tanto la similitud en patrones como en magnitudes.
 
 La elección entre una u otra depende de si las magnitudes de las características son importantes para el problema de clasificación de imágenes o si la orientación y patrones son suficientes para realizar la tarea de clasificación.
+
+## Problema 3: 
+
+### Descripción del Problema (Problema 3a)
+
+Problema 3: a. Grafique en el plano R^2 la bola de radio r y centro en el origen respecto a la distancia de Minkowski de orden p, donde los parámetros r y p varían desde 0.1 hasta 2 y desde 1 hasta ∞.
+
+### Etapas del Proyecto (Problema 1)
+
+1. Se define la función a utilizar, que en este caso es `minkowski_distance`.
+2. Posteriormente, se calculan los radios en un par de bucles `for` anidados, calculando los ángulos cos(θ) y seno(θ).
+3. Finalmente, se grafica usando `matplotlib`.
+4. Se concluye que a menor radio, la distancia de Minkowski es menor.
+   
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+# Definir la función de distancia de Minkowski
+def minkowski_distance(x, y, p):
+    return np.power(np.sum(np.abs(x - y)**p), 1/p)
+
+# Rango de valores de r (radio)
+# Me genera datos, iniciando en 0.1, hasta 2.0, generando 5 valores en dicho rango.
+radios = np.linspace(0.1, 2.0, 5)
+
+# Rango de valores de p para la distancia de Minkowski
+p_values = np.linspace(1, 5, 100)
+
+# Crear un gráfico
+plt.figure(figsize=(10, 8))
+
+# Calcular y graficar las circunferencias para cada valor de radio y p
+for r in radios:
+    distances = []
+    for p in p_values:
+        # Generar puntos en la circunferencia con radio r
+        theta = np.linspace(0, 2 * np.pi, 100)
+        x = r * np.cos(theta)
+        y = r * np.sin(theta)
+        # Calcular la distancia de Minkowski desde el centro (0, 0)
+        center = np.array([0, 0])
+        distance = minkowski_distance(center, np.column_stack((x, y)), p)
+        distances.append(distance)
+    plt.plot(p_values, distances, label=f'Radio={r:.2f} (Minkowski = {minkowski_distance(x, y, p)})')
+
+# Configurar el gráfico
+plt.title('Circunferencias de Minkowski con centro en (0, 0)')
+plt.xlabel('Valor de p (orden de la distancia de Minkowski)')
+plt.ylabel('Distancia de Minkowski')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
 
 ## Problema 5: Cálculo de Normas en una Matriz
 
