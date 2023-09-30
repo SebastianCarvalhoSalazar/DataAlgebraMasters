@@ -131,6 +131,50 @@ Problema 3: b. Programe un algoritmo que dado n y p genere de forma aleatoria un
 2. Se generan valores aleatorios en un bucle `for` invocando las distancias.
 3. Se concluye que a medida que aumenta el valor de n en R^n, el cálculo se vuelve más complejo, ya que la distancia es muy pequeña y el número de posibilidades aumenta.
 
+### Script (Problema 3b)
+
+```python
+import numpy as np
+import time
+print(time.strftime("%c"))
+### para R^4, se coloca lento, obviamente para 5 es mas demorado
+
+# Función para calcular la distancia de Minkowski entre dos puntos
+def minkowski_distance(point1, point2, p):
+    return np.power(np.sum(np.abs(point1 - point2) ** p), 1 / p)
+
+# Valor máximo permitido para la distancia
+max_distance = 0.1
+
+# Valores de p a probar
+# p_values = [1, 1.5, 2, 3, 4]
+p_values = [1, 1.5, 2, 3, 4]
+
+
+# Lista para almacenar los puntos encontrados
+points = []
+
+# Generar 5 puntos aleatorios con distintas distancias de Minkowski
+for _ in range(5):
+    while True:
+        # Generar un punto aleatorio en R^5 con valores entre -1 y 1
+        random_point = np.random.uniform(-1, 1, 5)
+
+        # Calcular la distancia de Minkowski con cada valor de p
+        distances = [minkowski_distance(random_point, np.zeros(5), p) for p in p_values]
+
+        # Comprobar si todas las distancias son menores que max_distance
+        if all(d < max_distance for d in distances):
+            points.append(random_point)
+            break
+
+# Imprimir los puntos encontrados
+for i, point in enumerate(points):
+    print(f"Punto {i + 1}: {point}")
+
+print(time.strftime("%c"))
+```
+
 ## Problema 5: Cálculo de Normas en una Matriz
 
 ### Descripción del Problema (Problema 5)
