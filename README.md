@@ -115,6 +115,10 @@ plt.grid(True)
 plt.show()
 ```
 
+<p align="center">
+  <img src="https://github.com/SebastianCarvalhoSalazar/DataAlgebraMasters/blob/master/Assets/cicunferencia_de_minkouski.jpg" width="70%">
+</p>
+
 ## Problema 5: Cálculo de Normas en una Matriz
 
 ### Descripción del Problema (Problema 5)
