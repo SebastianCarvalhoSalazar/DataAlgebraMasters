@@ -46,6 +46,12 @@ El proyecto 'GenderClassificationWithKNN' se enfoca en la clasificación de gén
 
 El éxito de este proyecto radica en la calidad de los datos de entrenamiento, la selección adecuada de hiperparámetros del modelo KNN y la capacidad de generalización del modelo en nuevas imágenes. Este enfoque de clasificación de género tiene aplicaciones potenciales en diversas áreas, como la identificación de género en fotografías, la segmentación demográfica en investigaciones y análisis de mercado, y más.
 
+La distancia coseno se centra en la orientación o dirección de los vectores de características de las imágenes, ignorando la magnitud. Esto la hace útil cuando se desea medir la similitud en términos de patrones o direcciones, lo que es común en la representación de imágenes como vectores.
+
+En cambio, la distancia euclidiana mide la diferencia en términos de la magnitud y dirección de los vectores de características. Es más adecuada cuando se requiere tener en cuenta tanto la similitud en patrones como en magnitudes.
+
+La elección entre una u otra depende de si las magnitudes de las características son importantes para el problema de clasificación de imágenes o si la orientación y patrones son suficientes para realizar la tarea de clasificación.
+
 ## Problema 5: Cálculo de Normas en una Matriz
 
 ### Descripción del Problema (Problema 5)
